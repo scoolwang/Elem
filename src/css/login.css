@@ -1,0 +1,70 @@
+div.container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+.head {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 20px 0 20px 0 !important;
+}
+
+.head span {
+  font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif !important;
+  color: #082155 !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+
+.form {
+  width: 340px !important;
+  padding-bottom: 30px !important;
+}
+
+.login-btn {
+  background-color: #4488FF !important;
+  border-color: #4488FF !important;
+  width: 100% !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+  font-size: 16px !important;
+}
+
+.login-btn:hover {
+  -webkit-box-shadow: 0 0.7rem 1.4rem #e0e2e8, 0 0.3rem 0.6rem rgba(12,14,27,.065) !important;
+  box-shadow: 0 0.7rem 1.4rem #e0e2e8, 0 0.3rem 0.6rem rgba(12,14,27,.065) !important;
+  -webkit-transform: translateY(-.2rem) !important;
+  -ms-transform: translateY(-.2rem) !important;
+  transform: translateY(-.2rem) !important;
+  -webkit-transition-duration: .45s !important;
+  transition-duration: .45s !important;
+  -webkit-transition: all .2s ease !important;
+  transition: all .2s ease !important;
+}
+
+.bottom-text-wrap {
+  padding-bottom: 70px !important;
+  line-height: 40px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.bottom-text-wrap div {
+  color: rgba(0,32,89,.4) !important;
+  font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif !important;
+  font-size: 15px !important;
+}
+
+.bottom-text-wrap div span:hover {
+  color: rgba(0,32,89,.8) !important;
+  -webkit-transition: all .2s !important;
+  -o-transition: all .2s !important;
+  transition: all .2s !important;
+  cursor: pointer !important;
+}
