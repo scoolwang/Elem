@@ -46,7 +46,7 @@ body {
   font-size: 14px !important;
 }
 .el-submenu__title:hover {
-  background-color: #F2F6FA !important;
+  background-color: rgba(58,101,235,.06) !important;
 }
 .el-menu-item-group__title {
   padding: 0 !important;
@@ -62,12 +62,12 @@ body {
 }
 
 .el-menu-item.is-active {
-  background-color: #F2F6FA !important;
+  background-color: rgba(58,101,235,.06) !important;
   color: #347EFF !important;
 }
 
 .el-menu-item:focus, .el-menu-item:hover {
-  background-color: #F2F6FA !important;
+  background-color: rgba(58,101,235,.06) !important;
 }
 
 .el-submenu__title span, .el-menu-item span {

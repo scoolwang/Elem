@@ -1,12 +1,12 @@
 <template>
   <div>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>分发托管</el-breadcrumb-item>
       <el-breadcrumb-item>应用概览</el-breadcrumb-item>
       <el-breadcrumb-item>应用版本</el-breadcrumb-item>
       <el-breadcrumb-item>{{form.version_id ? '更新版本信息' : '发布新版本'}}</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="write-content">
 

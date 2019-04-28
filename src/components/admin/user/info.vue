@@ -1,9 +1,9 @@
 <template>
   <div>
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>用户中心</el-breadcrumb-item>
       <el-breadcrumb-item>概览</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <!--<div class="tip-container">-->
       <!--<div class="tip-icon-wrap">-->

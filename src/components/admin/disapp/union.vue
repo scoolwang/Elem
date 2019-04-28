@@ -3,10 +3,10 @@
 
     <disapp-select :show.sync="showDisappSelect" :platform="platform == 'ios' ? 'android' : 'ios'" :title="platform == 'ios' ? '选择应用' : '选择应用'" @selected="onDisappSelected"></disapp-select>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>分发托管</el-breadcrumb-item>
       <el-breadcrumb-item>关联应用</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="write-content">
 

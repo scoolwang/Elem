@@ -1,11 +1,11 @@
 <template>
   <div>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>封装打包</el-breadcrumb-item>
       <el-breadcrumb-item>应用概览</el-breadcrumb-item>
       <el-breadcrumb-item>创建应用</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="write-content">
       <div class="setting-area">

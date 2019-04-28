@@ -1,10 +1,10 @@
 <template>
   <div>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>消息列表</el-breadcrumb-item>
       <el-breadcrumb-item>详情</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="write-content">
       <div class="back-btn" @click="onBack">

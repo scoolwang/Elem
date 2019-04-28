@@ -3,11 +3,11 @@
 
     <app-upload :show.sync="showUpload" :accept="uploadPlatfrom" @uploaded="onUploaded"></app-upload>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>分发托管</el-breadcrumb-item>
       <el-breadcrumb-item>应用概览</el-breadcrumb-item>
       <el-breadcrumb-item>应用版本</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="button-area">
       <div class="btn-wrap">

@@ -1,10 +1,10 @@
 <template>
   <div>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>分发托管</el-breadcrumb-item>
       <el-breadcrumb-item>下载记录</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="write-content">
 

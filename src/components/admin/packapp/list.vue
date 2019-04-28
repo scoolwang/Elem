@@ -1,10 +1,10 @@
 <template>
   <div>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>封装打包</el-breadcrumb-item>
       <el-breadcrumb-item>应用概览</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <!--<div class="tip-container">-->
       <!--<div class="tip-icon-wrap">-->

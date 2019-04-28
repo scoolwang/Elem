@@ -5,10 +5,10 @@
     <resource-select :show.sync="showResourceList" :type="resouceSelectType" :cerType="resouceSelectCertype" @selected="onResourceSelected"></resource-select>
     <disapp-select :show.sync="showDisappSelect" platform="ios" title="选择分发应用" show-create-button="true" @create="onCreateDisapp" @selected="onDisappSelected"></disapp-select>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>证书签名</el-breadcrumb-item>
       <el-breadcrumb-item>应用概览</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <div class="tip-container">
       <div class="tip-icon-wrap">

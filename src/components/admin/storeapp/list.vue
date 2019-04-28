@@ -3,11 +3,11 @@
 
     <app-upload :show.sync="showUpload"></app-upload>
 
-    <el-breadcrumb separator-class="el-icon-arrow-right">
+    <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item>首页</el-breadcrumb-item>
       <el-breadcrumb-item>代上架</el-breadcrumb-item>
       <el-breadcrumb-item>应用列表</el-breadcrumb-item>
-    </el-breadcrumb>
+    </el-breadcrumb> -->
 
     <p class="center-tip">暂未开放，敬请期待~</p>
 

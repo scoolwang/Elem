@@ -404,7 +404,7 @@
     width: 180px !important;
   }
   .navigation-menu:hover .el-aside .aside-txt {
-    display: inline-block;
+    display: inline;
   }
 </style>
 <style scoped>
@@ -416,9 +416,15 @@
     width: 240px;
 
   }
+ .submenu-sidbar .el-menu-item {
+  transition: none;
+ }
   .submenu-sidbar .el-menu {
-    padding-top: 30px;
+    padding-top: 40px;
     width: 240px;
+  }
+  .submenu-sidbar .item-active {
+    background: rgba(58,101,235,.06) !important;
   }
   .main-container {
   }
@@ -449,6 +455,7 @@
     display: flex;
   }
   .content-container {
+    position: relative;
     padding: 40px 70px;
   }
   .el-main.main {
