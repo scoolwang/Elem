@@ -149,7 +149,7 @@
           background-color="#fff"
           text-color="rgb(104, 114, 140)"
           active-text-color="#3a65eb">
-            <el-menu-item :class="{'item-active': subMenuIndex==item.index}" :index="item.index" :keys="item.index"  @click="onMenuChange(item.url)" v-for="(item, idx) in currenRoute">{{item.title}}{{subMenuIndex}}{{item.index}}</el-menu-item>
+            <el-menu-item :class="{'item-active': subMenuIndex==item.index}" :index="item.index" :key="item.index"  @click="onMenuChange(item.url)" v-for="(item, idx) in currenRoute">{{item.title}}{{subMenuIndex}}{{item.index}}</el-menu-item>
         </el-menu>
       </div>
       <router-view class="content-container"></router-view>
@@ -402,6 +402,7 @@
 <style>
   .navigation-menu:hover .el-aside {
     width: 180px !important;
+    overflow: hidden;
   }
   .navigation-menu:hover .el-aside .aside-txt {
     display: inline;
