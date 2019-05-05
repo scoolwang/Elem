@@ -141,7 +141,7 @@
     </el-main>
 
     <el-main class="main" :style="{left: asideWidth + 'px'}">
-      <div class="submenu-sidbar">
+      <div class="submenu-sidbar" v-if="currenRoute.length > 0">
         <el-menu
           :default-openeds="menuOpenIndexs"
           :default-active="subMenuIndex"
@@ -149,10 +149,10 @@
           background-color="#fff"
           text-color="rgb(104, 114, 140)"
           active-text-color="#3a65eb">
-            <el-menu-item :class="{'item-active': subMenuIndex==item.index}" :index="item.index" :key="item.index"  @click="onMenuChange(item.url)" v-for="(item, idx) in currenRoute">{{item.title}}{{subMenuIndex}}{{item.index}}</el-menu-item>
+            <el-menu-item :class="{'item-active': subMenuIndex==item.index}" :index="item.index" :key="item.index"  @click="onMenuChange(item.url)" v-for="(item, idx) in currenRoute">{{item.title}}</el-menu-item>
         </el-menu>
       </div>
-      <router-view class="content-container"></router-view>
+      <router-view class="content-container" :class="{'content-container-hide': currenRoute.length <=0 }"></router-view>
     </el-main>
 
 </el-container>
@@ -415,7 +415,9 @@
   /*全屏容器*/
   .submenu-sidbar {
     width: 240px;
-
+    position: fixed;
+    top: 56px;
+    bottom: 0;
   }
  .submenu-sidbar .el-menu-item {
   transition: none;
@@ -427,6 +429,7 @@
   .submenu-sidbar .item-active {
     background: rgba(58,101,235,.06) !important;
   }
+
   .main-container {
   }
   .hide-bar .aside-txt {
@@ -457,7 +460,11 @@
   }
   .content-container {
     position: relative;
-    padding: 40px 70px;
+    padding: 40px 30px 40px 40px;
+    left: 240px;
+  }
+  .content-container.content-container-hide {
+    left: 0;
   }
   .el-main.main {
     position: absolute;
