@@ -1,45 +1,45 @@
 <template>
-  <div class="container reg-container">
-    <hd></hd>
+  <!-- <div class="container"> -->
+
     <div>
 
       <!-- <div style="display: flex; justify-content: center; padding: 30px 0 40px 0;">
       </div> -->
 
       <el-card>
-      <div class="head">
-        <span>欢迎注册飞网</span>
-      </div>
+      <!-- <div class="head">
+        <span>用 户 注 册</span>
+      </div> -->
 
       <el-form :model="form" :rules="rules" ref="form" label-width="100px" class="form">
 
-        <el-form-item label="" prop="username">
-          <el-input v-model="form.username" auto-complete="off" placeholder="输入用户名,6-16位英文或数字"></el-input>
+        <el-form-item label="用户名" prop="username">
+          <el-input v-model="form.username"  placeholder="6-16位英文或数字"></el-input>
         </el-form-item>
 
-        <el-form-item label="" prop="password">
-          <el-input v-model="form.password" auto-complete="off" type="password" placeholder="输入账号密码，6-16位英文或数字"></el-input>
+        <el-form-item label="登录密码" prop="password">
+          <el-input v-model="form.password" auto-complete="off" type="password" placeholder="6-16位英文或数字"></el-input>
         </el-form-item>
 
-        <el-form-item label="" prop="phone">
-          <el-input placeholder="请输入手机号" v-model="form.phone" auto-complete="off" type="phone"></el-input>
+        <el-form-item label="手机号" prop="phone">
+          <el-input v-model="form.phone" auto-complete="off" type="phone"></el-input>
         </el-form-item>
 
-        <el-form-item label="" prop="validValue">
+        <el-form-item label="验证码" prop="validValue">
           <div class="valid-wrap">
-            <el-input placeholder="验证码" v-model="form.validValue" auto-complete="off" type="valid"></el-input>
+            <el-input v-model="form.validValue" auto-complete="off" type="valid"></el-input>
             <el-button class="send send-disable" size="small" type="primary" round v-if="timer != null">{{seconds}}秒后重发</el-button>
-            <el-button class="send" size="small" round v-if="timer == null" :loading="sendSMSLoading" @click="onSendSMS">发送验证码</el-button>
+            <el-button class="send" size="small" type="primary" round v-if="timer == null" :loading="sendSMSLoading" @click="onSendSMS">发送验证码</el-button>
           </div>
         </el-form-item>
 
         <el-form-item label="推荐人ID" prop="phone" v-if="form.rmdUser">
-          <el-input placeholder="推荐人ID" v-model="form.rmdUser" auto-complete="off" disabled=""></el-input>
+          <el-input v-model="form.rmdUser" auto-complete="off" disabled=""></el-input>
         </el-form-item>
 
         <el-button class="login-btn" type="primary" :loading="regButtonLoading" @click="submitForm">注 册</el-button>
 
-        <p style="font-size: 13px; margin-bottom: 0; color: rgb(104, 114, 140);text-align:center;">
+        <p style="font-size: 13px; margin-bottom: 0; color: #fff;">
           点击 “注册” 即表示您同意并愿意遵守 <a class="link" href="https://www.51gsc.com/protocol.html">服务协议</a>
         </p>
 
@@ -57,14 +57,14 @@
 
     </div>
 
-  </div>
+  <!-- </div> -->
 
 </template>
 
 <script>
   /* eslint-disable */
   import api from '../../util/api.js'
-  import hd from './Header.vue'
+
   export default {
     data () {
       return {
@@ -119,9 +119,6 @@
           ]
         }
       }
-    },
-    components: {
-      hd
     },
     methods: {
       onSendSuccess () {
@@ -244,41 +241,39 @@
     color: #347EFF;
     cursor: pointer;
   }
-  div.reg-container {
-    top: 61px !important;
-  }
-  .el-card {
-    border: none;
-    box-shadow: none;
-    background: none;
-  }
-  .el-form-item {
-    margin-bottom: 15px !important;
-  }
   .login-btn {
-    margin: 20px 0 !important;
+    background-color: #5050e8  !important;
+    border: none !important;
+    border-radius: 30px;
   }
-  .el-button.is-round  {
-    border-radius: 4px;
-    border-left:none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    height: 40px;
-  }
-
-</style>
-<style>
-  .valid-wrap .el-input__inner {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .is-error .el-button.is-round {
-    border-color: #fa5555;
-  }
-  .is-success .el-button.is-round {
-    border-color: #4758ee;
+  /*.el-button--primary {
+    background-color: #5050e8  !important;
+    border: none !important;
+  }*/
+  .el-form-item .el-form-item__label {
+    color: #fff !important;
   }
   .login-btn:hover {
-    background-color: #4758ee !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
+    transform: translateY(0) !important;
+  }
+  .el-input__inner {
+    border-radius: 20px;
+    color: #fff !important;
+  }
+</style>
+<style>
+
+  input::-webkit-input-placeholder{
+    color: #fff !important;
+  }
+  input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #fff !important;
+  }
+  input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #fff !important;
+  }
+  input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color: #fff !important;
   }
 </style>
