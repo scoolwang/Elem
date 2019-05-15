@@ -8,7 +8,7 @@
         </div>
         <div class="menu" :class="{'open-menu': isMenuOpen}" id="headerMenu">
           <ul  class="menu-item">
-            <li class="active"><a href="http://www.fei.cn/index.html" title="首页">首页</a></li>
+            <li class=""><a href="http://www.fei.cn/index.html" title="首页">首页</a></li>
             <li class="pc-prd" :class="{'p-active': isOpen}" @mouseover="over" @mouseout="out"><a class="prd-link" href="javascript:void(0)" title="产品">产品</a></li>
             <li class="wap-prd" @click.stop="wapOpenPrd"><a href="javascript:void(0)" title="产品">产品</a></li>
             <li><a href="http://www.fei.cn/doc.html" title="文档">文档</a></li>

@@ -281,4 +281,7 @@
   .login-btn:hover {
     background-color: #4758ee !important;
   }
+  .el-button.is-round span {
+    color: #999;
+  }
 </style>
